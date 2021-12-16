@@ -1,5 +1,6 @@
 let loginpage = require('../pages/login');
 let dashpage = require('../pages/dashboard');
+let editpatpage = require('../pages/editpatient');
 
 describe('Basic check',function(){
 
