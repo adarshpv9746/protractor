@@ -1,6 +1,6 @@
 let helper = require('../helpers/helper');
 let editpatpage = function(){
-    let f_name = element(by.xpath("//input[@class='mdl-textfield__input ng-pristine ng-valid ng-star-inserted ng-touched']"));
+    let f_name = element(by.xpath("//div[@class='common-card personal-detail-section']/div[@class='common-card-content']/div[1]//mdl-textfield[@class='required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
     let m_name = element(by.xpath("//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid ng-touched']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-star-inserted ng-touched']"));
     let l_name = element(by.xpath("//div[@class='common-card personal-detail-section']/div[@class='common-card-content']/div[2]//input[@class='mdl-textfield__input ng-pristine ng-valid ng-star-inserted ng-touched']"));
     let n_name = element(by.xpath("//div[@class='common-card personal-detail-section']//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
@@ -36,9 +36,8 @@ let editpatpage = function(){
         browser.get(url);
     };
 
-    this.fill_pat = function(){
-        helper.waitForElementpresent(add_btn);
-        add_btn.click();
+    this.fname = function(name){
+        f_name.sendKeys(name);
     };
 
 };

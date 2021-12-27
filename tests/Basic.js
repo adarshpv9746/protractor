@@ -18,4 +18,12 @@ describe('Basic check',function(){
         browser.sleep(2000);
     });
 
+    it('Edit patient',function(){
+        editpatpage.fname('Basic Check');
+        browser.sleep(2000);
+    });
+
+    
+
+
 })
