@@ -1,8 +1,31 @@
 let helper = require('../helpers/helper');
 let editpatpage = function(){
+    //values
+    let v_f_name = "Basic" 
+    let v_m_name = "MBasic"
+    let v_l_name = "LBasic"
+    let v_n_name = "NBasic"
+    let v_dob = "12/12/2000"
+    let v_hid = Date.now()
+    let v_notes = "Basic note"
+    let v_pfname = "BasicP"
+    let v_pmname = "BasicPM"
+    let v_plname = "BasicPL"
+    let v_pdob = "12/12/2000"
+    let v_saddr1 = "Basic address 1"
+    let v_addr2 = "Basic address 2"
+    let v_city = "Basic city"
+    let v_country = "Basic Country"
+    let v_state = "Basic State"
+    let v_zip = "9999"
+    let v_email = "csicoet18@gmail.com"
+    let v_cemail = "csicoet18@gmail.com"
+    let v_phone = "9999999999"
+
+    //locators
     let f_name = element(by.xpath("//div[@class='common-card personal-detail-section']/div[@class='common-card-content']/div[1]//mdl-textfield[@class='required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
-    let m_name = element(by.xpath("//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid ng-touched']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-star-inserted ng-touched']"));
-    let l_name = element(by.xpath("//div[@class='common-card personal-detail-section']/div[@class='common-card-content']/div[2]//input[@class='mdl-textfield__input ng-pristine ng-valid ng-star-inserted ng-touched']"));
+    let m_name = element(by.xpath("//div[@class='common-card personal-detail-section']//div[1]//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
+    let l_name = element(by.xpath("//div[@class='common-card personal-detail-section']/div[@class='common-card-content']/div[2]//mdl-textfield[@class='required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
     let n_name = element(by.xpath("//div[@class='common-card personal-detail-section']//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
     let dob = element(by.xpath("//mdl-textfield[@class='required-label has-placeholder mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid is-dirty ng-touched']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-star-inserted ng-touched']"));
     let hid = element(by.xpath("//div[@class='common-card personal-detail-section']//div[2]/mdl-textfield[@class='required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
@@ -36,8 +59,28 @@ let editpatpage = function(){
         browser.get(url);
     };
 
-    this.add_patent = function(name){
-        f_name.sendKeys(name);
+    this.add_patient = function(){
+        f_name.sendKeys(v_f_name);
+        m_name.sendKeys(v_m_name);
+        l_name.sendKeys(v_l_name);
+        n_name.sendKeys(v_n_name);
+        dob.sendKeys(v_dob);
+        hid.sendKeys(v_hid);
+        notes.sendKeys(v_notes);
+        pfname.sendKeys(v_pfname);
+        pmname.sendKeys(v_pmname);
+        plname.sendKeys(v_plname);
+        pdob.sendKeys(v_pdob);
+        saddr1.sendKeys(v_saddr1);
+        addr2.sendKeys(v_addr2);
+        city.sendKeys(v_city);
+        country.sendKeys(v_country);
+        state.sendKeys(v_state);
+        zip.sendKeys(v_zip);
+        email.sendKeys(v_email);
+        cemail.sendKeys(v_cemail);
+        phone.sendKeys(v_phone);
+
     };
 
 };
