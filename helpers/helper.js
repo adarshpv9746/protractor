@@ -18,6 +18,8 @@ var helper = function(){
         browser.wait(condition, 30000);
 
     }
+    
+    
 }
 
 module.exports = new helper();
