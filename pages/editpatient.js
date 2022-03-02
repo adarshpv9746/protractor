@@ -36,7 +36,7 @@ let editpatpage = function(){
         browser.get(url);
     };
 
-    this.fname = function(name){
+    this.add_patent = function(name){
         f_name.sendKeys(name);
     };
 
