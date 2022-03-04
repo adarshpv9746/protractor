@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="3" tests="3" time="2.567">
- <testsuite name="Basic check for" timestamp="2022-03-04T16:32:03" hostname="localhost" time="2.567" errors="0" tests="3" skipped="0" disabled="0" failures="3">
-  <testcase classname="Basic check for" name="Login to orthocatapult" time="2.488">
-   <failure type="exception" message="Failed: no such window: target window already closed
-from unknown error: web view not found
+<testsuites disabled="0" errors="0" failures="3" tests="3" time="2.833">
+ <testsuite name="Basic check for" timestamp="2022-03-04T16:34:38" hostname="localhost" time="2.833" errors="0" tests="3" skipped="0" disabled="0" failures="3">
+  <testcase classname="Basic check for" name="Login to orthocatapult" time="2.79">
+   <failure type="exception" message="Failed: chrome not reachable
   (Session info: chrome=99.0.4844.51)
-  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
-from unknown error: web view not found
+  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)"><![CDATA[WebDriverError: chrome not reachable
   (Session info: chrome=99.0.4844.51)
   (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)
     at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
@@ -69,12 +67,10 @@ Error
     at Function.Module._load (node:internal/modules/cjs/loader:822:12)]]>
    </failure>
   </testcase>
-  <testcase classname="Basic check for" name="click add patient button on dashboard" time="0.02">
-   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
-from unknown error: web view not found
+  <testcase classname="Basic check for" name="click add patient button on dashboard" time="0.018">
+   <failure type="exception" message="WebDriverError: chrome not reachable
   (Session info: chrome=99.0.4844.51)
-  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
-from unknown error: web view not found
+  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)"><![CDATA[WebDriverError: chrome not reachable
   (Session info: chrome=99.0.4844.51)
   (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)
     at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
@@ -94,12 +90,10 @@ From: Task: WebDriver.takeScreenshot()
     at Jasmine2ScreenShotReporter.specDone (/home/qburst/Desktop/ortho/protractor/protractor/node_modules/protractor-jasmine2-screenshot-reporter/index.js:596:7)]]>
    </failure>
   </testcase>
-  <testcase classname="Basic check for" name="filling detals and submitting them on Edit patient page" time="0.017">
-   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
-from unknown error: web view not found
+  <testcase classname="Basic check for" name="filling detals and submitting them on Edit patient page" time="0.009">
+   <failure type="exception" message="WebDriverError: chrome not reachable
   (Session info: chrome=99.0.4844.51)
-  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
-from unknown error: web view not found
+  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)"><![CDATA[WebDriverError: chrome not reachable
   (Session info: chrome=99.0.4844.51)
   (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Linux 5.13.0-30-generic x86_64)
     at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
