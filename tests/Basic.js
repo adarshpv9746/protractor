@@ -1,6 +1,7 @@
 let loginpage = require('../pages/login');
 let dashpage = require('../pages/dashboard');
 let editpatpage = require('../pages/editpatient');
+let edittxpage = require('../pages/edittxpage');
 describe('Basic check for',function(){
     browser.manage().window().maximize();
     it('Login to orthocatapult',function(){
@@ -9,20 +10,23 @@ describe('Basic check for',function(){
         loginpage.username('mac');
         loginpage.password('Mac@123');
         loginpage.login_button();
-        browser.sleep(2000);
+        browser.sleep(1000);
     });
 
     it('click add patient button on dashboard',function(){
         dashpage.addp_button();
-        browser.sleep(2000);
+        browser.sleep(1000);
     });
 
     it('filling detals and submitting them on Edit patient page',function(){
         editpatpage.add_patient();
-        browser.sleep(2000);
+        browser.sleep(1000);
     });
 
-    
+    it('filling the tx plan and submitting', function(){
+        edittxpage.submittx();
+        browser.sleep(1000);
+    });
 
 
 })
