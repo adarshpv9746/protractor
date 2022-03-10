@@ -1,3 +1,5 @@
+'use strict';
+
 var helper = function(){
     
     this.waitForElementpresent = function(element){
@@ -18,6 +20,10 @@ var helper = function(){
         browser.wait(condition, 30000);
 
     }
+
+    this.scrollTo = function(scrollToElement) {
+        browser.actions().mouseMove(scrollToElement).perform();
+    };
     
     
 }
