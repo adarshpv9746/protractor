@@ -22,25 +22,25 @@ let edittxpage = function() {
     let spaidto_pract = element(by.xpath("//div[@class='insurance-section row']/div[2]//div[@class=' flexbox flexbox-space-bet align-center(flex-end)']"));
     let spaidto_insr = element(by.xpath("//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid is-dirty ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-touched']"));
     let miscdicopt = element(by.xpath("//mdl-checkbox[@class='checkbox-section mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']")); 
-    let miscdic = element(by.xpath("//input[@class='mdl-textfield__input ng-valid ng-dirty ng-touched']"));
+    let miscdic = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[1]/div[5]/div[1]/div/mdl-textfield/div/input"));
     let viewall = element(by.xpath("//a[contains(.,'View All')]"));
     let cstudy1 = element(by.xpath("//div[@class='all-cases view-all-case-studies scroll-style']/div[1]//span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
     let brace = element(by.xpath("//div[@class='row options-checkbox-section']//mdl-checkbox[@class='mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid is-checked']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
-    let bracetxtime = element(by.xpath("//mdl-textfield[@class='month-unit-input projected_treatment_time required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
-    let bracetxfee = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-dirty is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
+    let bracetxtime = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[1]/div/mdl-textfield/div/input"));
+    let bracetxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
     let bracetxdown = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-valid is-dirty ng-touched ng-dirty is-focused']//input[@class='mdl-textfield__input ng-valid ng-touched ng-dirty']"));
     let aligner = element(by.xpath("//mdl-checkbox[@class='mdl-checkbox is-upgraded ng-untouched ng-valid is-checked ng-dirty']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
     let alignertab = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded']//div[2]//span[@class='mdl-tabs__ripple-container mdl-layout__tab-ripple-container']"));
-    let alignertxtime = element(by.xpath("//mdl-textfield[@class='month-unit-input projected_treatment_time required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
+    let alignertxtime = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[1]/div/mdl-textfield/div/input"));
     let alignertxfee = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-valid is-dirty ng-dirty ng-touched is-focused']//input[@class='mdl-textfield__input ng-valid ng-dirty ng-touched']"));
     let alignertxdown = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid is-dirty ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-touched']"));
     let combo = element(by.xpath("//div[@class='row options-checkbox-section']//div[4]//span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
     let combotab = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded']//div[3]//span[@class='mdl-tabs__ripple-container mdl-layout__tab-ripple-container']"));
-    let combotxtime = element(by.xpath("//mdl-textfield[@class='month-unit-input projected_treatment_time required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
-    let combotxfee = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-dirty is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
-    let combotxdown = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-dirty is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
-    let extendmonth = element(by.xpath("//mdl-textfield[@class='lengthy-label month-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid is-dirty ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-touched']"));
-    let acceltxfee = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid is-dirty is-focused']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid']"));
+    let combotxtime = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[1]/div/mdl-textfield/div/input"));
+    let combotxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
+    let combotxdown = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
+    let extendmonth = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[1]/div/mdl-textfield/div/input"));
+    let acceltxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
     let addnaplnc = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded']/div[4]//span[@class='mdl-select__toggle material-icons']"));  
     let addnaplnc2 = element(by.xpath("//mdl-option[2]//div[@class='mdl-list__item-primary-content']"));
     let addnaplncfee = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-star-inserted is-dirty ng-valid ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-star-inserted ng-valid ng-touched']"));
@@ -79,27 +79,35 @@ let edittxpage = function() {
         pinsrnc.click();
         pinsrnc2.click();
         pmaxcov.sendKeys(v_pmaxcov);
-        pmaxpcnt.sendKeys(v_pmaxpcnt);
+        //pmaxpcnt.sendKeys(v_pmaxpcnt);
         sinsrnc.click();
         sinsrnc2.click();
         smaxcov.sendKeys(v_smaxcov);
-        smaxpcnt.sendKeys(v_smaxpcnt);
+        //smaxpcnt.sendKeys(v_smaxpcnt);
         helper.scrollTo(viewall)
         miscdicopt.click();
         miscdic.sendKeys(v_miscdic);
+        helper.scrollTo(brace)
         viewall.click();
         cstudy1.click();
+        helper.scrollTo(extendmonth)
+        
         bracetxtime.sendKeys(v_bracetxtime);
+        
         bracetxfee.sendKeys(v_bracetxfee);
         bracetxdown.sendKeys(v_bracetxdown);
         aligner.click();
+        
         alignertab.click();
         alignertxtime.sendKeys(v_alignertxtime);
+        
         alignertxfee.sendKeys(v_alignertxfee);
         alignertxdown.sendKeys(v_alignertxdown);
         combo.click();
+        
         combotab.click();
         combotxtime.sendKeys(v_combotxtime);
+        
         combotxfee.sendKeys(v_combotxfee);
         combotxdown.sendKeys(v_combotxdown);
         extendmonth.sendKeys(v_extendmonth);

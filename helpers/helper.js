@@ -1,5 +1,4 @@
-'use strict';
-
+var until = protractor.ExpectedConditions;
 var helper = function(){
     
     this.waitForElementpresent = function(element){
@@ -23,6 +22,10 @@ var helper = function(){
 
     this.scrollTo = function(scrollToElement) {
         browser.actions().mouseMove(scrollToElement).perform();
+    };
+
+    this.wait = function(elem){
+        browser.wait(until.presenceOf(elem), 5000, 'Element is taking too long to appear in the DOM');
     };
     
     
