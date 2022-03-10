@@ -79,12 +79,12 @@ let edittxpage = function() {
         pinsrnc.click();
         pinsrnc2.click();
         pmaxcov.sendKeys(v_pmaxcov);
-        //pmaxpcnt.sendKeys(v_pmaxpcnt);
+        pmaxpcnt.sendKeys(v_pmaxpcnt);
         sinsrnc.click();
         sinsrnc2.click();
         smaxcov.sendKeys(v_smaxcov);
-        //smaxpcnt.sendKeys(v_smaxpcnt);
-        browser.actions().mouseMove(smaxpcnt).perform();
+        smaxpcnt.sendKeys(v_smaxpcnt);
+        helper.scrollTo(viewall)
         miscdicopt.click();
         miscdic.sendKeys(v_miscdic);
         viewall.click();
