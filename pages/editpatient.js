@@ -22,6 +22,7 @@ let editpatpage = function(){
     let v_cemail = "csicoet18@gmail.com"
     let v_phone = "9999999999"
 
+
     //locators
     let f_name = element(by.xpath("//div[@class='common-card personal-detail-section']/div[@class='common-card-content']/div[1]//mdl-textfield[@class='required-label mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
     let m_name = element(by.xpath("//div[@class='common-card personal-detail-section']//div[1]//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-untouched ng-pristine ng-valid']//input[@class='mdl-textfield__input ng-untouched ng-pristine ng-valid ng-star-inserted']"));
@@ -68,7 +69,8 @@ let editpatpage = function(){
         browser.get(url);
     };
 
-    this.add_patient = function(){
+    this.add_patient = function(emaildom){
+        browser.sleep(100);
         f_name.sendKeys(v_f_name);
         m_name.sendKeys(v_m_name);
         l_name.sendKeys(v_l_name);
@@ -108,6 +110,8 @@ let editpatpage = function(){
         pcontact.click();
         pcontact1.click();
         savecreate.click();
+        browser.sleep(10);
+       
     };
 
 };

@@ -28,7 +28,7 @@ let edittxpage = function() {
     let brace = element(by.xpath("//div[@class='row options-checkbox-section']//mdl-checkbox[@class='mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid is-checked']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
     let bracetxtime = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[1]/div/mdl-textfield/div/input"));
     let bracetxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
-    let bracetxdown = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-valid is-dirty ng-touched ng-dirty is-focused']//input[@class='mdl-textfield__input ng-valid ng-touched ng-dirty']"));
+    let bracetxdown = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[3]/div/mdl-textfield/div/input"));
     let aligner = element(by.xpath("//mdl-checkbox[@class='mdl-checkbox is-upgraded ng-untouched ng-valid is-checked ng-dirty']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
     let alignertab = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded']//div[2]//span[@class='mdl-tabs__ripple-container mdl-layout__tab-ripple-container']"));
     let alignertxtime = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[1]/div/mdl-textfield/div/input"));
@@ -40,22 +40,22 @@ let edittxpage = function() {
     let combotxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
     let combotxdown = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
     let extendmonth = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[1]/div/mdl-textfield/div/input"));
-    let acceltxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[1]/div[2]/div/mdl-textfield/div/input"));
-    let addnaplnc = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded']/div[4]//span[@class='mdl-select__toggle material-icons']"));  
-    let addnaplnc2 = element(by.xpath("//mdl-option[2]//div[@class='mdl-list__item-primary-content']"));
-    let addnaplncfee = element(by.xpath("//mdl-textfield[@class='currency-unit-input mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-star-inserted is-dirty ng-valid ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-star-inserted ng-valid ng-touched']"));
+    let acceltxfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[2]/div/mdl-textfield/div/input"));
+    let addnaplnc = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[3]/div/mdl-select/div/span[2]"));  
+    let addnaplnc2 = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[3]/div/mdl-select/div/mdl-popover/div/mdl-option[2]/div/div"));
     let downpaydisc = element(by.xpath("//mdl-checkbox[@class='checkbox-section mdl-checkbox is-upgraded ng-pristine ng-valid is-checked ng-touched']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
     let present = element(by.xpath("//mdl-button[@class='mdl-button present']/span[@class='mdl-button__ripple-container']"));
-
-//values to be passed
+    let outsideclk = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded ng-star-inserted']/div[@class='mdl-tabs__tab-bar']"));
+    let addnaplncfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[4]/div/mdl-textfield/div/input"));
+    //values to be passed
     v_pmaxcov = 10
     v_pmaxpcnt = 100
     v_smaxcov = 10
     v_smaxpcnt = 50
     v_miscdic = 10
     v_bracetxtime = 10
-    v_bracetxfee = 100
-    v_bracetxdown = 10
+    v_bracetxfee = 30
+    v_bracetxdown = 1
     v_alignertxtime = 10
     v_alignertxfee = 100
     v_alignertxdown = 10
@@ -64,58 +64,61 @@ let edittxpage = function() {
     v_combotxdown = 10
     v_extendmonth = 10
     v_acceltxfee = 10
-    v_addnaplncfee = 10
+    v_addnaplncfee = 1
 
     this.get = function(url){
         browser.get(url);
     };
 
-    this.submittx = function(){
-        expat.click();
-        txcat.click();
-        txcat3.click();
-        txsubcat.click();
-        txsubcat1.click();
-        pinsrnc.click();
-        pinsrnc2.click();
-        pmaxcov.sendKeys(v_pmaxcov);
+    this.submittx = async function(){
+        await expat.click();
+        await txcat.click();
+        await txcat3.click();
+        await txsubcat.click();
+        await txsubcat1.click();
+        await pinsrnc.click();
+        await pinsrnc2.click();
+        await pmaxcov.sendKeys(v_pmaxcov);
         //pmaxpcnt.sendKeys(v_pmaxpcnt);
-        sinsrnc.click();
-        sinsrnc2.click();
-        smaxcov.sendKeys(v_smaxcov);
+        await sinsrnc.click();
+        await sinsrnc2.click();
+        await smaxcov.sendKeys(v_smaxcov);
         //smaxpcnt.sendKeys(v_smaxpcnt);
-        helper.scrollTo(viewall)
-        miscdicopt.click();
-        miscdic.sendKeys(v_miscdic);
-        helper.scrollTo(brace)
-        viewall.click();
-        cstudy1.click();
-        helper.scrollTo(extendmonth)
+        await helper.scrollTo(viewall)
+        await miscdicopt.click();
+        await miscdic.sendKeys(v_miscdic);
+        await helper.scrollTo(brace)
+        await viewall.click();
+        await cstudy1.click();
+        await helper.scrollTo(extendmonth)
         
-        bracetxtime.sendKeys(v_bracetxtime);
+        await bracetxtime.sendKeys(v_bracetxtime);
+        await outsideclk.click();
+        await browser.sleep(500)
+        await acceltxfee.sendKeys(v_acceltxfee);
+        await bracetxfee.clear();
+        await bracetxfee.sendKeys(v_bracetxfee);
+        await bracetxdown.clear();
+        await bracetxdown.sendKeys(v_bracetxdown);
+        //aligner.click();
         
-        bracetxfee.sendKeys(v_bracetxfee);
-        bracetxdown.sendKeys(v_bracetxdown);
-        aligner.click();
+        //alignertab.click();
+        //alignertxtime.sendKeys(v_alignertxtime);
         
-        alignertab.click();
-        alignertxtime.sendKeys(v_alignertxtime);
+        //alignertxfee.sendKeys(v_alignertxfee);
+        //alignertxdown.sendKeys(v_alignertxdown);
+        //combo.click();
         
-        alignertxfee.sendKeys(v_alignertxfee);
-        alignertxdown.sendKeys(v_alignertxdown);
-        combo.click();
+        //combotab.click();
+        //combotxtime.sendKeys(v_combotxtime);
         
-        combotab.click();
-        combotxtime.sendKeys(v_combotxtime);
-        
-        combotxfee.sendKeys(v_combotxfee);
-        combotxdown.sendKeys(v_combotxdown);
-        extendmonth.sendKeys(v_extendmonth);
-        acceltxfee.sendKeys(v_acceltxfee);
-        addnaplnc.click();
-        addnaplnc2.click();
-        addnaplncfee.sendKeys(v_addnaplncfee);
-        present.click();
+        //combotxfee.sendKeys(v_combotxfee);
+        //combotxdown.sendKeys(v_combotxdown);
+        await extendmonth.sendKeys(v_extendmonth);
+        await addnaplnc.click();
+        await addnaplnc2.click();
+        await addnaplncfee.sendKeys(v_addnaplncfee);
+        await present.click();
         
 
 
