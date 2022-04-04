@@ -64,7 +64,9 @@ let editpatpage = function(){
     let pcontact = element(by.xpath("//mdl-select[@class='required-label long-text capitalize-text mdl-select mdl-select--floating-label ng-untouched ng-valid ng-dirty']//input[@class='mdl-textfield__input']"));
     let pcontact1 = element(by.xpath("//mdl-option[1]//div[@class='mdl-list__item-primary-content']"));
     let savecreate = element(by.xpath("//mdl-button[@class='draft send-tx-plan mdl-button ng-star-inserted']/span[@class='mdl-button__ripple-container']"));
-
+    let edit_btn = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[3]/mdl-button[2]"));
+    let update = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div[2]/mdl-button[2]/span"));
+    
     this.get = function(url){
         browser.get(url);
     };
@@ -113,6 +115,22 @@ let editpatpage = function(){
         browser.sleep(10);
        
     };
+
+    this.change_mail = function(){
+        browser.sleep(500);
+        browser.executeScript('window.scrollTo(0, document.body.scrollHeight);');
+        browser.sleep(100)
+        edit_btn.click();
+        //helper.scrollTo(edit_btn);
+        //edit_btn.click();
+        browser.sleep(100);
+        helper.scrollTo(update);
+        browser.sleep(100);
+        email.sendKeys(v_email);
+        cemail.sendKeys(v_cemail);
+        update.click();
+
+    }
 
 };
 

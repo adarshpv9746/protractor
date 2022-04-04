@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="4" time="46.118">
- <testsuite name="Basic check for" timestamp="2022-04-01T12:40:32" hostname="localhost" time="46.118" errors="0" tests="4" skipped="0" disabled="0" failures="0">
-  <testcase classname="Basic check for" name="Login to orthocatapult" time="6.267" />
-  <testcase classname="Basic check for" name="click add patient button on dashboard" time="7.213" />
-  <testcase classname="Basic check for" name="filling detals and submitting them on Edit patient page" time="14.317" />
-  <testcase classname="Basic check for" name="filling the tx plan and submitting" time="18.303" />
+<testsuites disabled="0" errors="0" failures="0" tests="4" time="49.235">
+ <testsuite name="Basic check for" timestamp="2022-04-04T10:53:51" hostname="localhost" time="49.235" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Basic check for" name="Login to orthocatapult" time="6.44" />
+  <testcase classname="Basic check for" name="click add patient button on dashboard" time="8.761" />
+  <testcase classname="Basic check for" name="filling detals and submitting them on Edit patient page" time="15.132" />
+  <testcase classname="Basic check for" name="filling the tx plan and submitting" time="18.885" />
  </testsuite>
 </testsuites>

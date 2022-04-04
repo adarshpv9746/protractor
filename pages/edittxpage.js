@@ -21,7 +21,7 @@ let edittxpage = function() {
     let smaxpcnt = element(by.xpath("//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid is-dirty ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-touched']"));
     let spaidto_pract = element(by.xpath("//div[@class='insurance-section row']/div[2]//div[@class=' flexbox flexbox-space-bet align-center(flex-end)']"));
     let spaidto_insr = element(by.xpath("//mdl-textfield[@class='mdl-textfield is-upgraded mdl-textfield--floating-label ng-pristine ng-valid is-dirty ng-touched is-focused']//input[@class='mdl-textfield__input ng-pristine ng-valid ng-touched']"));
-    let miscdicopt = element(by.xpath("//mdl-checkbox[@class='checkbox-section mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid']/span[@class='mdl-checkbox__ripple-container mdl-ripple--center']")); 
+    let miscdicopt = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[1]/div[5]/div[1]/mdl-checkbox/span[4]")); 
     let miscdic = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[1]/div[5]/div[1]/div/mdl-textfield/div/input"));
     let viewall = element(by.xpath("//a[contains(.,'View All')]"));
     let cstudy1 = element(by.xpath("//div[@class='all-cases view-all-case-studies scroll-style']/div[1]//span[@class='mdl-checkbox__ripple-container mdl-ripple--center']"));
@@ -47,6 +47,7 @@ let edittxpage = function() {
     let present = element(by.xpath("//mdl-button[@class='mdl-button present']/span[@class='mdl-button__ripple-container']"));
     let outsideclk = element(by.xpath("//mdl-tabs[@class='tab-right tab-head-padding pricing-section mdl-tabs is-upgraded ng-star-inserted']/div[@class='mdl-tabs__tab-bar']"));
     let addnaplncfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[4]/div/mdl-textfield/div/input"));
+    let acccontainer = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]"));
     //values to be passed
     v_pmaxcov = 10
     v_pmaxpcnt = 100
@@ -70,36 +71,39 @@ let edittxpage = function() {
         browser.get(url);
     };
 
-    this.submittx = async function(){
-        await expat.click();
-        await txcat.click();
-        await txcat3.click();
-        await txsubcat.click();
-        await txsubcat1.click();
-        await pinsrnc.click();
-        await pinsrnc2.click();
-        await pmaxcov.sendKeys(v_pmaxcov);
+    this.submittx =  function(){
+        expat.click();
+        txcat.click();
+        txcat3.click();
+        txsubcat.click();
+        txsubcat1.click();
+        pinsrnc.click();
+        pinsrnc2.click();
+        pmaxcov.sendKeys(v_pmaxcov);
         //pmaxpcnt.sendKeys(v_pmaxpcnt);
-        await sinsrnc.click();
-        await sinsrnc2.click();
-        await smaxcov.sendKeys(v_smaxcov);
+        sinsrnc.click();
+        sinsrnc2.click();
+        smaxcov.sendKeys(v_smaxcov);
         //smaxpcnt.sendKeys(v_smaxpcnt);
-        await helper.scrollTo(viewall)
-        await miscdicopt.click();
-        await miscdic.sendKeys(v_miscdic);
-        await helper.scrollTo(brace)
-        await viewall.click();
-        await cstudy1.click();
-        await helper.scrollTo(extendmonth)
-        
-        await bracetxtime.sendKeys(v_bracetxtime);
-        await outsideclk.click();
-        await browser.sleep(500)
-        await acceltxfee.sendKeys(v_acceltxfee);
-        await bracetxfee.clear();
-        await bracetxfee.sendKeys(v_bracetxfee);
-        await bracetxdown.clear();
-        await bracetxdown.sendKeys(v_bracetxdown);
+        helper.scrollTo(viewall);
+        browser.sleep(100);
+        miscdicopt.click();
+        miscdic.sendKeys(v_miscdic);
+        helper.scrollTo(brace);
+        browser.sleep(100);
+        viewall.click();
+        cstudy1.click();
+        helper.scrollTo(extendmonth);
+        browser.sleep(100);
+
+        bracetxtime.sendKeys(v_bracetxtime);
+        outsideclk.click();
+        browser.sleep(500)
+        acceltxfee.sendKeys(v_acceltxfee);
+        bracetxfee.clear();
+        bracetxfee.sendKeys(v_bracetxfee);
+        bracetxdown.clear();
+        bracetxdown.sendKeys(v_bracetxdown);
         //aligner.click();
         
         //alignertab.click();
@@ -114,11 +118,12 @@ let edittxpage = function() {
         
         //combotxfee.sendKeys(v_combotxfee);
         //combotxdown.sendKeys(v_combotxdown);
-        await extendmonth.sendKeys(v_extendmonth);
-        await addnaplnc.click();
-        await addnaplnc2.click();
-        await addnaplncfee.sendKeys(v_addnaplncfee);
-        await present.click();
+        extendmonth.sendKeys(v_extendmonth);
+        helper.scrollTo(acccontainer);
+        addnaplnc.click();
+        addnaplnc2.click();
+        addnaplncfee.sendKeys(v_addnaplncfee);
+        present.click();
         
 
 

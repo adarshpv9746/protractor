@@ -17,11 +17,13 @@ describe('Basic check for',function(){
 
     it('click add patient button on dashboard',function(){
         dashpage.addp_button();
+        //dashpage.firstpat();
         browser.sleep(1000);
     });
 
     it('filling detals and submitting them on Edit patient page',function(){
         editpatpage.add_patient();
+        //editpatpage.change_mail();
         browser.sleep(500);
     });
 
