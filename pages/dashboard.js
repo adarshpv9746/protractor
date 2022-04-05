@@ -1,19 +1,22 @@
 let helper = require('../helpers/helper');
 let dashpage = function(){
-    let add_btn = element(by.xpath("//mdl-button[@class='primary patient-add-btn ng-tns-c5-0 mdl-button ng-star-inserted']"));
-    let f_pat =element(by.xpath("/html/body/my-app/div[2]/ng-component/ng-component/div/div[3]/div[2]/mdl-card/div[3]/table/tbody/tr[1]/td[1]/div[1]"));
+    let add_btn = element(by.xpath("/html/body/my-app/div[2]/ng-component/ng-component/div/div[3]/div[2]/mdl-card/div[2]/div[2]/mdl-button"));
+    let f_pat =element(by.xpath("//table[@class='mdl-data-table mdl-js-data-table mdl-data-table--selectable']//tr[1]//div[.='csicoet18@gmail.com']"));
     this.get = function(url){
         browser.get(url);
     };
 
     this.addp_button = function(){
-        helper.waitForElementpresent(add_btn);
-        browser.sleep(1000);
+        //helper.waitForElementpresent(add_btn);
+        browser.sleep(200);
         add_btn.click();
     };
 
+    this.gotodash = function(){
+        browser.get('https://qa.practicecatapult.com/home/dashboard');
+    }
     this.firstpat = function(){
-        browser.sleep(1000);
+        browser.sleep(100);
         f_pat.click();
 
     }

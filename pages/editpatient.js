@@ -1,4 +1,5 @@
 let helper = require('../helpers/helper');
+const dashboard = require('./dashboard');
 let editpatpage = function(){
     //values
     let v_f_name = "Basic" 
@@ -18,7 +19,7 @@ let editpatpage = function(){
     let v_country = "Basic Country"
     let v_state = "Basic State"
     let v_zip = "99999"
-    let v_email = "csicoet18@gmail.com"
+    let v_email = "{wewrty}56*@As34-r"
     let v_cemail = "csicoet18@gmail.com"
     let v_phone = "9999999999"
 
@@ -65,13 +66,15 @@ let editpatpage = function(){
     let pcontact1 = element(by.xpath("//mdl-option[1]//div[@class='mdl-list__item-primary-content']"));
     let savecreate = element(by.xpath("//mdl-button[@class='draft send-tx-plan mdl-button ng-star-inserted']/span[@class='mdl-button__ripple-container']"));
     let edit_btn = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[3]/mdl-button[2]"));
+    let hhstat = element(by.xpath("//div[.='Status']"));
     let update = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div[2]/mdl-button[2]/span"));
-    
+    let logo = element(by.xpath("//img[@src='assets/home_logo_svg-1.971d02ee36ed68ea8db28395d8f292d1.svg']"));
+
     this.get = function(url){
         browser.get(url);
     };
 
-    this.add_patient = function(emaildom){
+    this.add_patient = function(dom){
         browser.sleep(100);
         f_name.sendKeys(v_f_name);
         m_name.sendKeys(v_m_name);
@@ -106,27 +109,32 @@ let editpatpage = function(){
         country.sendKeys(v_country);
         state.sendKeys(v_state);
         zip.sendKeys(v_zip);
-        email.sendKeys(v_email);
-        cemail.sendKeys(v_cemail);
+        email.sendKeys(v_email+dom);
+        cemail.sendKeys(v_email+dom);
         phone.sendKeys(v_phone);
         pcontact.click();
         pcontact1.click();
         savecreate.click();
+        
+        //logo.click();
         browser.sleep(10);
        
     };
 
-    this.change_mail = function(){
-        browser.sleep(500);
-        browser.executeScript('window.scrollTo(0, document.body.scrollHeight);');
+    this.change_mail = function(dom){
+        browser.sleep(2000);
+        //browser.executeScript('window.scrollTo(0, document.body.scrollHeight);');
+        helper.scrollTo(hhstat);
         browser.sleep(100)
         edit_btn.click();
-        //helper.scrollTo(edit_btn);
-        //edit_btn.click();
         browser.sleep(100);
         helper.scrollTo(update);
         browser.sleep(100);
-        email.sendKeys(v_email);
+        email.sendKeys(protractor.Key.chord(protractor.Key.CONTROL, "a", protractor.Key.BACK_SPACE),v_email);
+        browser.sleep(100);
+        //email.sendKeys(v_email);
+        cemail.sendKeys(protractor.Key.CONTROL, "a", protractor.Key.NULL,"csi@gmail.com");
+        browser.sleep(100);
         cemail.sendKeys(v_cemail);
         update.click();
 
