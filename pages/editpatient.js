@@ -75,7 +75,7 @@ let editpatpage = function(){
     };
 
     this.add_patient = function(dom){
-        browser.sleep(100);
+        browser.sleep(400);
         f_name.sendKeys(v_f_name);
         m_name.sendKeys(v_m_name);
         l_name.sendKeys(v_l_name);

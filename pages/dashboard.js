@@ -8,7 +8,7 @@ let dashpage = function(){
 
     this.addp_button = function(){
         //helper.waitForElementpresent(add_btn);
-        browser.sleep(200);
+        browser.sleep(1000);
         add_btn.click();
     };
 

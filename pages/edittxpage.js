@@ -49,13 +49,13 @@ let edittxpage = function() {
     let addnaplncfee = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]/div[4]/div/mdl-textfield/div/input"));
     let acccontainer = element(by.xpath("/html/body/my-app/div[2]/ng-component/div[3]/div/div/div[1]/div[2]/div[2]/mdl-tabs/div[2]/mdl-tab-panel/mdl-tab-panel-content/div[2]"));
     //values to be passed
-    v_pmaxcov = 10
+    v_pmaxcov = 1
     v_pmaxpcnt = 100
-    v_smaxcov = 10
+    v_smaxcov = 1
     v_smaxpcnt = 50
-    v_miscdic = 10
+    v_miscdic = 1
     v_bracetxtime = 10
-    v_bracetxfee = 30
+    v_bracetxfee = 4
     v_bracetxdown = 1
     v_alignertxtime = 10
     v_alignertxfee = 100
@@ -64,7 +64,7 @@ let edittxpage = function() {
     v_combotxfee = 100
     v_combotxdown = 10
     v_extendmonth = 10
-    v_acceltxfee = 10
+    v_acceltxfee = 1
     v_addnaplncfee = 1
 
     this.get = function(url){
@@ -120,10 +120,15 @@ let edittxpage = function() {
         //combotxdown.sendKeys(v_combotxdown);
         extendmonth.sendKeys(v_extendmonth);
         helper.scrollTo(acccontainer);
-        addnaplnc.click();
-        addnaplnc2.click();
-        addnaplncfee.sendKeys(v_addnaplncfee);
+        //addnaplnc.click();
+        //addnaplnc2.click();
+        //addnaplncfee.sendKeys(v_addnaplncfee);
         present.click();
+        //let guids = browser.getAllWindowHandles();
+        //console.log(guids);
+        //browser.switchTo().window(guids[1]);
+        //element(by.xpath("//mdl-button[@class='filled-button mdl-button']")).click();
+        //expect(browser.getCurrentUrl()).toContain('https://qa.practicecatapult.com/ortho-accept');
         
 
 
